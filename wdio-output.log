@@ -1,0 +1,2506 @@
+[10:15:47]  COMMAND	POST 	 "/wd/hub/session"
+[10:15:47]  DATA		{"desiredCapabilities":{"javascriptEnabled":true,"locationContextEnabled":true,"handlesAlerts":true,"rotatable":true,"maxInstances":1,"browserName":"chrome","browserVersion":"latest","parentTunnel":"nmadmin","tunnelIdentifier":"nmadmin-temp-tunnel","screenResolution":"1280x1024","_":"2 more keys: [\"loggingPrefs\",\"requestOrigins\"]"}}
+[10:15:54]  INFO	SET SESSION ID 55436f9647014cf4bb3703d225996252
+[10:15:54]  RESULT		{"takesScreenshot":true,"acceptSslCerts":true,"networkConnectionEnabled":false,"mobileEmulationEnabled":false,"unexpectedAlertBehaviour":"","applicationCacheEnabled":false,"locationContextEnabled":true,"rotatable":false,"chrome":{"chromedriverVersion":"2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1)","userDataDir":"C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\scoped_dir1044_28516"},"hasTouchScreen":false,"platform":"Windows NT","version":"64.0.3282.119","nativeEvents":true,"handlesAlerts":true,"takesHeapSnapshot":true,"javascriptEnabled":true,"databaseEnabled":false,"webdriver.remote.sessionid":"55436f9647014cf4bb3703d225996252","browserName":"chrome","hasMetadata":true,"webStorageEnabled":true,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"setWindowRect":true,"pageLoadStrategy":"normal"}
+[10:15:54]  COMMAND	POST 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/url"
+[10:15:54]  DATA		{"url":"https://www.ultimateqa.com/complicated-page/"}
+[10:15:57]  COMMAND	POST 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/execute"
+[10:15:57]  DATA		{"script":"sauce:context=repro page - reproduce the issue","args":[]}
+>>> combined .waitForVisible()
+[10:15:57]  COMMAND	POST 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/elements"
+[10:15:57]  DATA		{"using":"css selector","value":"#main-content .entry-content .et_pb_row_1 .et_pb_text div:nth-child(1)"}
+[10:15:57]  RESULT		[{"ELEMENT":"0.34934838981914584-1"}]
+[10:15:57]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-1/displayed"
+[10:15:57]  DATA		{}
+[10:15:57]  RESULT		true
+[10:15:57]  COMMAND	POST 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/elements"
+[10:15:57]  DATA		{"using":"css selector","value":"#main-content .entry-content .et_pb_row_1 .et_pb_text div:nth-child(1)"}
+[10:15:57]  RESULT		[{"ELEMENT":"0.34934838981914584-1"}]
+[10:15:57]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-1/displayed"
+[10:15:57]  DATA		{}
+[10:15:58]  RESULT		true
+Visible using combined selector: true
+<<< combined .waitForVisible()
+>>> chained .waitForVisible()
+[10:15:58]  COMMAND	POST 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element"
+[10:15:58]  DATA		{"using":"id","value":"main-content"}
+[10:15:58]  RESULT		{"ELEMENT":"0.34934838981914584-2"}
+[10:15:58]  COMMAND	POST 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-2/element"
+[10:15:58]  DATA		{"using":"css selector","value":".entry-content"}
+[10:15:58]  RESULT		{"ELEMENT":"0.34934838981914584-3"}
+[10:15:58]  COMMAND	POST 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-3/element"
+[10:15:58]  DATA		{"using":"css selector","value":".et_pb_row_1"}
+[10:15:58]  RESULT		{"ELEMENT":"0.34934838981914584-4"}
+[10:15:58]  COMMAND	POST 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-4/element"
+[10:15:58]  DATA		{"using":"css selector","value":".et_pb_text"}
+[10:15:58]  RESULT		{"ELEMENT":"0.34934838981914584-5"}
+[10:15:58]  COMMAND	POST 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-5/element"
+[10:15:58]  DATA		{"using":"css selector","value":"div:nth-child(1)"}
+[10:15:58]  RESULT		{"ELEMENT":"0.34934838981914584-1"}
+[10:15:58]  COMMAND	POST 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/elements"
+[10:15:58]  DATA		{"using":"css selector","value":"div:nth-child(1)"}
+[10:15:58]  RESULT		[{"ELEMENT":"0.34934838981914584-6"},{"ELEMENT":"0.34934838981914584-7"},{"ELEMENT":"0.34934838981914584-8"},{"ELEMENT":"0.34934838981914584-9"},{"ELEMENT":"0.34934838981914584-10"},{"ELEMENT":"0.3493 ... (5131 more bytes)
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-6/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-7/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-8/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-9/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-10/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-2/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-3/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-11/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-12/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-13/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-14/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-15/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-16/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-17/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-18/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-1/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-19/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-20/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-21/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-22/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-23/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-24/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-25/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-26/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-27/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-28/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-29/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-30/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-31/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-32/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-33/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-34/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-35/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-36/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-37/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-38/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-39/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-40/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-41/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-42/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-43/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-44/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-45/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-46/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-47/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-48/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-49/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-50/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-51/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-52/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-53/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-54/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-55/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-56/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-57/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-58/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-59/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-60/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-61/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-62/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-63/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-64/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-65/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-66/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-67/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-68/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-69/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-70/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-71/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-72/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-73/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-74/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-75/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-76/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-77/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-78/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-79/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-80/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-81/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-82/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-83/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-84/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-85/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-86/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-87/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-88/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-89/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-90/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-91/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-92/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-93/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-94/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-95/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-96/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-97/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-98/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-99/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-100/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-101/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-102/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-103/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-104/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-105/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-106/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-107/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-108/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-109/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-110/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-111/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-112/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-113/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-114/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-115/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-116/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-117/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-118/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-119/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-120/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-121/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-122/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-123/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-124/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-125/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-126/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-127/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-128/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-129/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-130/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-131/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-132/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-133/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-134/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-135/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-136/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-137/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-138/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-139/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-140/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-141/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-142/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-143/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-144/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-145/displayed"
+[10:15:59]  DATA		{}
+[10:15:59]  RESULT		true
+[10:15:59]  RESULT		true
+[10:15:59]  RESULT		true
+[10:15:59]  RESULT		true
+[10:15:59]  COMMAND	POST 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/elements"
+[10:15:59]  DATA		{"using":"css selector","value":"div:nth-child(1)"}
+[10:15:59]  RESULT		true
+[10:15:59]  RESULT		true
+[10:15:59]  RESULT		true
+[10:15:59]  RESULT		true
+[10:15:59]  RESULT		true
+[10:15:59]  RESULT		true
+[10:15:59]  RESULT		true
+[10:15:59]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:00]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		[{"ELEMENT":"0.34934838981914584-6"},{"ELEMENT":"0.34934838981914584-7"},{"ELEMENT":"0.34934838981914584-8"},{"ELEMENT":"0.34934838981914584-9"},{"ELEMENT":"0.34934838981914584-10"},{"ELEMENT":"0.3493 ... (5131 more bytes)
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-6/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-7/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-8/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-9/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-10/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-2/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-3/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-11/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-12/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-13/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-14/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-15/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-16/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-17/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-18/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-1/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-19/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-20/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-21/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-22/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-23/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-24/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-25/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-26/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-27/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-28/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-29/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-30/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-31/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-32/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-33/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-34/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-35/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-36/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-37/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-38/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-39/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-40/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-41/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-42/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-43/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-44/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-45/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-46/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-47/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-48/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-49/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-50/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-51/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-52/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-53/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-54/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-55/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-56/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-57/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-58/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-59/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-60/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-61/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-62/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-63/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-64/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-65/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-66/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-67/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-68/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-69/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-70/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-71/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-72/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-73/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-74/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-75/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-76/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-77/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-78/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-79/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-80/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-81/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-82/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-83/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-84/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-85/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-86/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-87/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-88/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-89/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-90/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-91/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-92/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-93/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-94/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-95/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-96/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-97/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-98/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-99/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-100/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-101/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-102/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-103/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-104/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-105/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-106/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-107/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-108/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-109/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-110/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-111/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-112/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-113/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-114/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-115/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-116/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-117/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-118/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-119/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-120/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-121/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-122/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-123/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-124/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-125/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-126/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-127/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-128/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-129/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-130/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-131/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-132/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-133/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-134/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-135/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-136/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-137/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-138/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-139/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-140/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-141/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-142/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-143/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-144/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-145/displayed"
+[10:16:01]  DATA		{}
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:01]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  COMMAND	POST 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/elements"
+[10:16:02]  DATA		{"using":"css selector","value":"div:nth-child(1)"}
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		true
+[10:16:02]  RESULT		[{"ELEMENT":"0.34934838981914584-6"},{"ELEMENT":"0.34934838981914584-7"},{"ELEMENT":"0.34934838981914584-8"},{"ELEMENT":"0.34934838981914584-9"},{"ELEMENT":"0.34934838981914584-10"},{"ELEMENT":"0.3493 ... (5131 more bytes)
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-6/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-7/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-8/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-9/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-10/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-2/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-3/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-11/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-12/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-13/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-14/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-15/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-16/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-17/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-18/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-1/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-19/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-20/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-21/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-22/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-23/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-24/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-25/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-26/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-27/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-28/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-29/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-30/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-31/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-32/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-33/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-34/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-35/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-36/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-37/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-38/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-39/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-40/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-41/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-42/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-43/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-44/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-45/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-46/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-47/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-48/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-49/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-50/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-51/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-52/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-53/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-54/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-55/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-56/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-57/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-58/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-59/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-60/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-61/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-62/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-63/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-64/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-65/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-66/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-67/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-68/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-69/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-70/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-71/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-72/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-73/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-74/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-75/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-76/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-77/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-78/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-79/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-80/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-81/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-82/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-83/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-84/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-85/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-86/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-87/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-88/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-89/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-90/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-91/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-92/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-93/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-94/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-95/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-96/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-97/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-98/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-99/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-100/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-101/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-102/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-103/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-104/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-105/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-106/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-107/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-108/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-109/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-110/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-111/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-112/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-113/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-114/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-115/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-116/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-117/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-118/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-119/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-120/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-121/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-122/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-123/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-124/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-125/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-126/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-127/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-128/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-129/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-130/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-131/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-132/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-133/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-134/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-135/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-136/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-137/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-138/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-139/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-140/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-141/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-142/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-143/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-144/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-145/displayed"
+[10:16:03]  DATA		{}
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:03]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  COMMAND	POST 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/elements"
+[10:16:04]  DATA		{"using":"css selector","value":"div:nth-child(1)"}
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		[{"ELEMENT":"0.34934838981914584-6"},{"ELEMENT":"0.34934838981914584-7"},{"ELEMENT":"0.34934838981914584-8"},{"ELEMENT":"0.34934838981914584-9"},{"ELEMENT":"0.34934838981914584-10"},{"ELEMENT":"0.3493 ... (5131 more bytes)
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-6/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-7/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-8/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-9/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-10/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-2/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-3/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-11/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-12/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-13/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-14/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-15/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-16/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-17/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-18/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-1/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-19/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-20/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-21/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-22/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-23/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-24/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-25/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-26/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-27/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-28/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-29/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-30/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-31/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-32/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-33/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-34/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-35/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-36/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-37/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-38/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-39/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-40/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-41/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-42/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-43/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-44/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-45/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-46/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-47/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-48/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-49/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-50/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-51/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-52/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-53/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-54/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-55/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-56/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-57/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-58/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-59/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-60/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-61/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-62/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-63/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-64/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-65/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-66/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-67/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-68/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-69/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-70/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-71/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-72/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-73/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-74/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-75/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-76/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-77/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-78/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-79/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-80/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-81/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-82/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-83/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-84/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-85/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-86/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-87/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-88/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-89/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-90/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-91/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-92/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-93/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-94/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-95/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-96/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-97/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-98/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-99/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-100/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-101/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-102/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-103/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-104/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-105/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-106/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-107/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-108/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-109/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-110/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-111/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-112/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-113/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-114/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-115/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-116/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-117/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-118/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-119/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-120/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-121/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-122/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-123/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-124/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-125/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-126/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-127/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-128/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-129/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-130/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-131/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-132/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-133/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-134/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-135/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-136/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-137/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-138/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-139/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-140/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-141/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-142/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-143/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-144/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-145/displayed"
+[10:16:04]  DATA		{}
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:04]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  COMMAND	POST 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/elements"
+[10:16:05]  DATA		{"using":"css selector","value":"div:nth-child(1)"}
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		true
+[10:16:05]  RESULT		[{"ELEMENT":"0.34934838981914584-6"},{"ELEMENT":"0.34934838981914584-7"},{"ELEMENT":"0.34934838981914584-8"},{"ELEMENT":"0.34934838981914584-9"},{"ELEMENT":"0.34934838981914584-10"},{"ELEMENT":"0.3493 ... (5131 more bytes)
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-6/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-7/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-8/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-9/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-10/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-2/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-3/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-11/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-12/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-13/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-14/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-15/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-16/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-17/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-18/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-1/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-19/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-20/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-21/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-22/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-23/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-24/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-25/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-26/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-27/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-28/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-29/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-30/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-31/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-32/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-33/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-34/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-35/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-36/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-37/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-38/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-39/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-40/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-41/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-42/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-43/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-44/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-45/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-46/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-47/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-48/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-49/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-50/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-51/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-52/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-53/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-54/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-55/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-56/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-57/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-58/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-59/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-60/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-61/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-62/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-63/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-64/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-65/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-66/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-67/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-68/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-69/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-70/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-71/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-72/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-73/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-74/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-75/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-76/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-77/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-78/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-79/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-80/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-81/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-82/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-83/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-84/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-85/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-86/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-87/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-88/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-89/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-90/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-91/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-92/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-93/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-94/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-95/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-96/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-97/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-98/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-99/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-100/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-101/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-102/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-103/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-104/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-105/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-106/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-107/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-108/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-109/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-110/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-111/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-112/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-113/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-114/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-115/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-116/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-117/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-118/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-119/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-120/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-121/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-122/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-123/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-124/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-125/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-126/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-127/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-128/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-129/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-130/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-131/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-132/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-133/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-134/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-135/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-136/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-137/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-138/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-139/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-140/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-141/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-142/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-143/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-144/displayed"
+[10:16:05]  DATA		{}
+[10:16:05]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-145/displayed"
+[10:16:05]  DATA		{}
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  COMMAND	POST 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/elements"
+[10:16:06]  DATA		{"using":"css selector","value":"div:nth-child(1)"}
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		[{"ELEMENT":"0.34934838981914584-6"},{"ELEMENT":"0.34934838981914584-7"},{"ELEMENT":"0.34934838981914584-8"},{"ELEMENT":"0.34934838981914584-9"},{"ELEMENT":"0.34934838981914584-10"},{"ELEMENT":"0.3493 ... (5131 more bytes)
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-6/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-7/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-8/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-9/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-10/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-2/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-3/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-11/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-12/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-13/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-14/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-15/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-16/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-17/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-18/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-1/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-19/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-20/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-21/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-22/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-23/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-24/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-25/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-26/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-27/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-28/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-29/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-30/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-31/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-32/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-33/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-34/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-35/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-36/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-37/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-38/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-39/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-40/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-41/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-42/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-43/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-44/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-45/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-46/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-47/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-48/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-49/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-50/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-51/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-52/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-53/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-54/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-55/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-56/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-57/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-58/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-59/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-60/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-61/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-62/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-63/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-64/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-65/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-66/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-67/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-68/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-69/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-70/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-71/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-72/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-73/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-74/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-75/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-76/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-77/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-78/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-79/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-80/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-81/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-82/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-83/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-84/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-85/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-86/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-87/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-88/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-89/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-90/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-91/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-92/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-93/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-94/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-95/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-96/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-97/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-98/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-99/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-100/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-101/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-102/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-103/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-104/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-105/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-106/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-107/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-108/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-109/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-110/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-111/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-112/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-113/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-114/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-115/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-116/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-117/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-118/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-119/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-120/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-121/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-122/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-123/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-124/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-125/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-126/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-127/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-128/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-129/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-130/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-131/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-132/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-133/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-134/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-135/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-136/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-137/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-138/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-139/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-140/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-141/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-142/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-143/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-144/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-145/displayed"
+[10:16:06]  DATA		{}
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:06]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  COMMAND	POST 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/elements"
+[10:16:07]  DATA		{"using":"css selector","value":"div:nth-child(1)"}
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:07]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		[{"ELEMENT":"0.34934838981914584-6"},{"ELEMENT":"0.34934838981914584-7"},{"ELEMENT":"0.34934838981914584-8"},{"ELEMENT":"0.34934838981914584-9"},{"ELEMENT":"0.34934838981914584-10"},{"ELEMENT":"0.3493 ... (5131 more bytes)
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-6/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-7/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-8/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-9/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-10/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-2/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-3/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-11/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-12/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-13/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-14/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-15/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-16/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-17/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-18/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-1/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-19/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-20/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-21/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-22/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-23/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-24/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-25/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-26/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-27/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-28/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-29/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-30/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-31/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-32/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-33/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-34/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-35/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-36/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-37/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-38/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-39/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-40/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-41/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-42/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-43/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-44/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-45/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-46/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-47/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-48/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-49/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-50/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-51/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-52/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-53/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-54/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-55/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-56/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-57/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-58/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-59/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-60/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-61/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-62/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-63/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-64/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-65/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-66/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-67/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-68/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-69/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-70/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-71/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-72/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-73/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-74/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-75/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-76/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-77/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-78/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-79/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-80/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-81/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-82/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-83/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-84/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-85/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-86/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-87/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-88/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-89/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-90/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-91/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-92/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-93/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-94/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-95/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-96/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-97/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-98/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-99/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-100/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-101/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-102/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-103/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-104/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-105/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-106/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-107/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-108/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-109/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-110/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-111/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-112/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-113/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-114/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-115/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-116/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-117/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-118/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-119/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-120/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-121/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-122/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-123/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-124/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-125/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-126/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-127/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-128/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-129/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-130/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-131/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-132/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-133/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-134/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-135/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-136/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-137/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-138/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-139/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-140/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-141/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-142/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-143/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-144/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/element/0.34934838981914584-145/displayed"
+[10:16:08]  DATA		{}
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:08]  COMMAND	GET 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252/screenshot"
+[10:16:08]  DATA		{}
+[10:16:08]  RESULT		true
+[10:16:08]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:09]  RESULT		true
+[10:16:10]  RESULT		"iVBORw0KGgoAAAANSUhEUgAABQAAAAO8CAYAAAAWPBnDAAAgAElEQVR4nOzddXxT1/vA8U+SJm3qQpUqXoq7w6C4bjgMZ4ONyXfu7mNj8psPGIPBxmDYcBs2fLgWpwUKhVL3JL8/QkNDkjZV7Hm/Xrxo7j059yS9uU2enPM8Ctp8Z0AIIYQQQgghhBBCCHFHSl42vFT ... (103894 more bytes)
+[10:16:10]  	Saved screenshot: ERROR_chrome_2018-02-01T16-16-08.843Z.png
+[10:16:10]  COMMAND	DELETE 	 "/wd/hub/session/55436f9647014cf4bb3703d225996252"
+[10:16:10]  DATA		{}
+------------------------------------------------------------------
+[chrome #0-0] Session ID: 55436f9647014cf4bb3703d225996252
+[chrome #0-0] Spec: /Users/mac9525/nmlv-gitlab/misc/wdio-error-repro/tests/repro-local.spec.js
+[chrome #0-0] Running: chrome
+[chrome #0-0]
+[chrome #0-0] repro page
+[chrome #0-0]   1) reproduce the issue
+[chrome #0-0]
+[chrome #0-0]
+[chrome #0-0] 1 failing (23s)
+[chrome #0-0]
+[chrome #0-0] 1) repro page reproduce the issue:
+[chrome #0-0] Promise was rejected with the following reason: Invalid message: 55436f9647014cf4bb3703d225996252
+[chrome #0-0] Error: Promise was rejected with the following reason: Invalid message: 55436f9647014cf4bb3703d225996252
+[chrome #0-0]     at elementIdDisplayed("0.34934838981914584-145") - isVisible.js:71:55
+[chrome #0-0]
+[chrome #0-0] Check out job at https://saucelabs.com/tests/55436f9647014cf4bb3703d225996252
+[chrome #0-0]
+
