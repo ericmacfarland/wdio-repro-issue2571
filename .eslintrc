@@ -1,0 +1,45 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 2017,
+        "sourceType": "module"
+    },
+    "env": {
+        "node": true,
+        "mocha": true,
+        "jest": true,
+        "es6": true,
+        "browser": true
+    },
+    "globals": {
+        "browser": false,
+        "$": false
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "quote-props": "off",
+        "eqeqeq": "off",
+        "curly": "warn",
+        "semi": [ "error", "always" ],
+        "linebreak-style": [ "error", "unix" ],
+        "eol-last": "warn",
+        "no-multiple-empty-lines": [ "warn", { "max": 1, "maxEOF": 1 } ],
+        "quotes": [ "warn", "single" ],
+        "space-before-function-paren": [ "warn", { "anonymous": "always", "named": "never" } ],
+        "no-console": "off",
+        "dot-notation": "warn",
+        "semi-spacing": "warn",
+        "require-yield": "off",
+        "comma-dangle": [ "error", "never" ],
+        "indent": [ "error", 4, { "SwitchCase": 1 } ],
+        "max-len": [ "warn", 150 ],
+        "arrow-body-style": [ "error", "as-needed" ],
+        "no-param-reassign": "off",
+        "new-cap": "off",
+        "no-use-before-define": "off",
+        "func-names": "off",
+        "no-plusplus": "off",
+        "no-restricted-syntax": "off",
+        "no-underscore-dangle": "off",
+        "object-curly-spacing": [ "warn", "always" ]
+    }
+}

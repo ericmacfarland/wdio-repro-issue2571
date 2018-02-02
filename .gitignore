@@ -1,0 +1,17 @@
+# Dependency directories
+node_modules
+
+# Error screenshots from wdio
+errorShots/
+
+# Logs
+npm-debug.log*
+*.log
+logs/
+
+OS Specific
+.DS_STORE
+
+IDE Specific
+.idea/
+.vscode/
