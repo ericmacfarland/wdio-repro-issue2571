@@ -20,15 +20,15 @@ The failure does not appear to occur locally, but examining the wdio log yields 
 ### Highlights
 This repro compares the behavior of calling:
 
-`browser.waitForVisible('page section myElement')` (lines 9-23 in wdio-output.log)
+`browser.waitForVisible('page section myElement')` ([lines 9-23](wdio-output.log#L9-L23) in wdio-output.log)
 
 with the behavior of calling
 
-`$('page').$('section').$('myElement').waitForVisible()` (lines 24-2484 in wdio-output.log)
+`$('page').$('section').$('myElement').waitForVisible()` ([lines 24-2484](wdio-output.log#L24-L2484) in wdio-output.log)
 
 
 The key difference that I noticed was in how the elements are retrieved.
 
-For the combined selector, the POST returns a single element (line 18)
+For the combined selector, the POST returns a [single element](wdio-output.log#L18)
 
-For the chained selector, there are a series of POST commands, where the final one seems to ignore the previous selector calls and loses its specificity, resulting in a large number of elements being returned.
+For the chained selector, there are a series of POST commands, where the final one seems to ignore the previous selector calls and loses its specificity, resulting in a [large number](wdio-output.log#L42) of elements being returned.
